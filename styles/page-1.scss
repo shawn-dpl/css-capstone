@@ -80,7 +80,7 @@ body {
     width: 95%;
     margin-left: 2.5%;
     margin-top: -3%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid orange;
     border-radius: 10px;
@@ -94,15 +94,15 @@ body {
       align-items: center;
       width: 60%;
     }
-    .stand-for-captions-title {
+    .stand-for-captions-titles {
       display: flex;
-      justify-content: flex-start;
-      // grid-template-columns: repeat(3, 1fr);
-      column-gap: 54%;
+      justify-content: space-around;
+      // column-gap: 54%;
       // flex-direction: row;
-      // align-items: ;
+      align-items: center;
       font-size: x-large;
-      padding: 0 15.2%;
+      // padding: 0 15.2%;
+      width: 60%;
       border: 1px solid rgb(72, 255, 0);
 
       .title-1 {
