@@ -96,11 +96,25 @@ body {
     }
     .stand-for-captions-title {
       display: flex;
+      justify-content: flex-start;
+      // grid-template-columns: repeat(3, 1fr);
+      column-gap: 54%;
       // flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
+      // align-items: ;
       font-size: x-large;
-      border: 1px solid red;
+      padding: 0 15.2%;
+      border: 1px solid rgb(72, 255, 0);
+
+      .title-1 {
+        display: flex;
+        color: red;
+      }
+      .title-2 {
+        display: flex;
+        justify-content: center;
+
+        color: blue;
+      }
     }
   }
 }

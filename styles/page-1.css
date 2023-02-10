@@ -87,8 +87,19 @@ body {
 }
 .hero .stand-for .stand-for-captions-title {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 54%;
+       column-gap: 54%;
   font-size: x-large;
-  border: 1px solid red;
+  padding: 0 15.2%;
+  border: 1px solid rgb(72, 255, 0);
+}
+.hero .stand-for .stand-for-captions-title .title-1 {
+  display: flex;
+  color: red;
+}
+.hero .stand-for .stand-for-captions-title .title-2 {
+  display: flex;
+  justify-content: center;
+  color: blue;
 }/*# sourceMappingURL=page-1.css.map */
