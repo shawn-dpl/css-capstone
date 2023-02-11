@@ -77,28 +77,66 @@ body {
   border-radius: 10px;
 }
 .hero .stand-for .stand-for-title {
-  font-size: 250%;
+  display: flex;
+  justify-content: center;
+  font-size: 255%;
+  border: 1px solid blue;
 }
 .hero .stand-for .stand-for-images {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 60%;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 45%;
 }
-.hero .stand-for .stand-for-captions-titles {
+.hero .stand-for .stand-for-caption-titles {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 47%;
   font-size: x-large;
-  width: 60%;
-  border: 1px solid rgb(72, 255, 0);
 }
-.hero .stand-for .stand-for-captions-titles .title-1 {
+.hero .stand-for .stand-for-caption-titles .title-2 {
   display: flex;
-  color: red;
+  margin-right: 2%;
 }
-.hero .stand-for .stand-for-captions-titles .title-2 {
+.hero .stand-for .stand-for-caption-titles .title-3 {
   display: flex;
+  margin-right: 2%;
+}
+.hero .stand-for .stand-for-caption-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 61%;
+  opacity: 50%;
+}
+.hero .about {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  color: blue;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.hero .about .about-title {
+  display: flex;
+  padding-left: 20%;
+  border: 1px solid black;
+  font-size: 255%;
+}
+.hero .about .about-content {
+  display: flex;
+  padding-left: 20%;
+  flex-wrap: wrap;
+  width: 24%;
+  border: 1px solid blue;
+}
+.hero .about .about-img {
+  display: flex;
+  justify-content: flex-end;
+  height: 50%;
+  width: 50%;
+  border: 1px solid red;
+  margin-left: 30%;
+  margin-top: -10%;
 }/*# sourceMappingURL=page-1.css.map */
