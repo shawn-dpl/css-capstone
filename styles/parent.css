@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.page .navbar {
+  display: grid;
+  grid-template-columns: 43vw 57vw;
+  align-items: center;
+  padding-top: 1%;
+  height: 5vh;
+  background-color: aqua;
+}
+.page .navbar .left-navbar {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+.page .navbar .right-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  padding-left: 35vw;
+  font-size: medium;
+  opacity: 50%;
+}
+.page .navbar .right-navbar .first-child:hover .navbar {
+  display: grid;
+  grid-template-columns: 43vw 57vw;
+  align-items: center;
+  padding-top: 1%;
+  height: 5vh;
+  background-color: aqua;
+}
+.page .hero {
+  border: 1px solid blue;
+  height: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 265%;
+  background-color: pink;
+}/*# sourceMappingURL=parent.css.map */
