@@ -10,49 +10,79 @@ body {
   grid-template-columns: 1fr;
 
   .navbar {
-    display: grid;
-    grid-template-columns: 43vw 57vw;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 1%;
-    height: 5vh;
+    // height: 350%;
     background-color: aqua;
+    padding: 1%;
 
     .left-navbar {
-      display: flex;
-      justify-content: center;
-      font-size: larger;
+      justify-content: flex-start;
+      font-size: 120%;
+      border: 1px solid black;
+      margin-left: 7%;
+      // padding-right: 7%;
     }
 
     .right-navbar {
+      border: 1px solid black;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 30vw;
-      padding-left: 35vw;
-      font-size: medium;
-
-      .first-child:hover {
-        .navbar {
-          display: grid;
-          grid-template-columns: 43vw 57vw;
-          align-items: center;
-          padding-top: 1%;
-          height: 5vh;
-          background-color: aqua;
-        }
-      }
-
-      opacity: 50%;
+      justify-content: space- space-around;
+      margin-right: -45%;
+      // padding: 0.5%;
     }
   }
-
-  .hero {
-    border: 1px solid blue;
-    height: 18vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 265%;
-    background-color: pink;
-  }
 }
+
+// .page {
+//   display: grid;
+//   grid-template-columns: 1fr;
+
+//   .navbar {
+//     display: grid;
+//     grid-template-columns: 43vw 57vw;
+//     align-items: center;
+//     padding-top: 1%;
+//     height: 5vh;
+//     background-color: aqua;
+
+//     .left-navbar {
+//       display: flex;
+//       justify-content: center;
+//       font-size: larger;
+//     }
+
+//     .right-navbar {
+//       display: flex;
+//       justify-content: space-around;
+//       align-items: center;
+//       width: 30vw;
+//       padding-left: 35vw;
+//       font-size: medium;
+
+//       .first-child:hover {
+//         .navbar {
+//           display: grid;
+//           grid-template-columns: 43vw 57vw;
+//           align-items: center;
+//           padding-top: 1%;
+//           height: 5vh;
+//           background-color: aqua;
+//         }
+//       }
+
+//       opacity: 50%;
+//     }
+//   }
+
+//   .hero {
+//     border: 1px solid blue;
+//     height: 18vw;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 265%;
+//     background-color: pink;
+//   }
+// }

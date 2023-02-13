@@ -10,41 +10,21 @@ body {
   grid-template-columns: 1fr;
 }
 .page .navbar {
-  display: grid;
-  grid-template-columns: 43vw 57vw;
-  align-items: center;
-  padding-top: 1%;
-  height: 5vh;
-  background-color: aqua;
-}
-.page .navbar .left-navbar {
-  display: flex;
-  justify-content: center;
-  font-size: larger;
-}
-.page .navbar .right-navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30vw;
-  padding-left: 35vw;
-  font-size: medium;
-  opacity: 50%;
-}
-.page .navbar .right-navbar .first-child:hover .navbar {
-  display: grid;
-  grid-template-columns: 43vw 57vw;
-  align-items: center;
-  padding-top: 1%;
-  height: 5vh;
   background-color: aqua;
+  padding: 1%;
 }
-.page .hero {
-  border: 1px solid blue;
-  height: 18vw;
+.page .navbar .left-navbar {
+  justify-content: flex-start;
+  font-size: 120%;
+  border: 1px solid black;
+  margin-left: 7%;
+}
+.page .navbar .right-navbar {
+  border: 1px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 265%;
-  background-color: pink;
+  justify-content: space- space-around;
+  margin-right: -45%;
 }/*# sourceMappingURL=worth-a-thousand-words.css.map */

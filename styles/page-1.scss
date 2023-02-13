@@ -8,7 +8,7 @@ body {
 // @mixin
 .navbar {
   display: grid;
-  grid-template-columns: 43vw 57vw;
+  grid-template-columns: 30% 70%;
   align-items: center;
   padding-top: 1%;
   height: 5vh;
@@ -16,8 +16,10 @@ body {
 
   .left-navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    // align-items: center;
     font-size: larger;
+    padding: 2%;
   }
 
   .right-navbar {
@@ -27,9 +29,12 @@ body {
     width: 30vw;
     padding-left: 35vw;
     font-size: medium;
+    padding: 2%;
 
-    .first-child:hover {
+    :first-child:hover {
       opacity: 50%;
+      // padding: 2%;
+      // border: 1px solid black;
     }
   }
 }
@@ -40,7 +45,11 @@ body {
   flex-direction: column;
   // grid-template-rows: 0% 20% 20% 20% 20% 20%;
   border: 1px solid red;
-
+  display: flex;
+  background-image: url(../images/blue-sky-clouds.jpg);
+  background-repeat: no-repeat;
+  height: 55.5%;
+  width: 100%;
   .welcome {
     display: flex;
     flex-direction: column;
@@ -48,6 +57,7 @@ body {
     align-items: center;
     border: 1px solid blue;
     padding-bottom: 10%;
+    // background-image: url(../images/blue-sky-clouds.jpg);
 
     .welcome-title {
       display: flex;
@@ -83,7 +93,7 @@ body {
     align-items: center;
     border: 1px solid orange;
     border-radius: 10px;
-
+    background-image: none;
     .stand-for-title {
       display: flex;
       justify-content: center;
