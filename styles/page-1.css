@@ -7,29 +7,43 @@ body {
 
 .navbar {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding-top: 1%;
-  height: 5vh;
-  background-color: aqua;
+  height: 6vh;
+  width: 100%;
+}
+.navbar :link {
+  color: black;
+}
+.navbar :link :hover {
+  opacity: 50%;
 }
 .navbar .left-navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   font-size: larger;
-  padding: 2%;
+  border: 1px solid green;
+  margin-left: 25%;
+}
+.navbar .left-navbar :hover {
+  opacity: 50%;
 }
 .navbar .right-navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 30vw;
-  padding-left: 35vw;
-  font-size: medium;
+  width: 14vw;
+  font-size: small;
   padding: 2%;
+  margin-left: 47%;
 }
-.navbar .right-navbar :first-child:hover {
+.navbar .right-navbar :last-child {
+  background-color: aqua;
+}
+.navbar .right-navbar :hover {
   opacity: 50%;
+  background-color: aqua;
 }
 
 .hero {
@@ -37,19 +51,22 @@ body {
   grid-template-columns: 1fr;
   flex-direction: column;
   border: 1px solid red;
-  display: flex;
-  background-image: url(../images/blue-sky-clouds.jpg);
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/blue-sky-clouds.jpg");
+  margin-bottom: 3%;
+  background-position: top;
   background-repeat: no-repeat;
-  height: 55.5%;
-  width: 100%;
+  background-size: 100% 37%;
 }
 .hero .welcome {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   border: 1px solid blue;
-  padding-bottom: 10%;
+  padding-top: 10%;
+  margin-bottom: 5%;
 }
 .hero .welcome .welcome-title {
   display: flex;
@@ -77,12 +94,12 @@ body {
   flex-direction: column;
   width: 95%;
   margin-left: 2.5%;
-  margin-top: -3%;
+  margin-top: 8%;
   justify-content: space-between;
   align-items: center;
   border: 1px solid orange;
   border-radius: 10px;
-  background-image: none;
+  background-color: white;
 }
 .hero .stand-for .stand-for-title {
   display: flex;
@@ -102,6 +119,7 @@ body {
   justify-content: space-between;
   width: 47%;
   font-size: x-large;
+  margin-bottom: 2%;
 }
 .hero .stand-for .stand-for-caption-titles .title-2 {
   display: flex;
@@ -116,13 +134,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 61%;
+  font-size: 0.95rem;
   opacity: 50%;
+  margin-top: -3.5%;
+  text-align: center;
 }
 .hero .about {
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 95%;
   margin-left: 2.5%;
 }
@@ -131,6 +151,7 @@ body {
   padding-left: 20%;
   border: 1px solid black;
   font-size: 255%;
+  width: 25%;
 }
 .hero .about .about-content {
   display: flex;
@@ -140,13 +161,36 @@ body {
   border: 1px solid blue;
 }
 .hero .about .about-img {
-  display: flex;
-  justify-content: flex-end;
-  height: 50%;
-  width: 50%;
+  display: block;
+  justify-content: flex-start;
+  width: 10%;
   border: 1px solid red;
-  margin-left: 30%;
-  margin-top: -10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+  width: 100%;
+  height: 5vw;
+}
+.hero .footer .left-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+}
+.hero .footer .left-footer :link {
+  font-size: small;
+  color: white;
+}
+.hero .footer .right-footer {
+  color: white;
+}
+.hero .footer .right-footer :link {
+  color: white;
 }
 @media all and (min-width: 320px) and (max-width: 600px) {
   .hero .body {
