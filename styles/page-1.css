@@ -12,10 +12,10 @@ body {
   height: 6vh;
   width: 100%;
 }
-.navbar :link {
+.navbar:link {
   color: black;
 }
-.navbar :link :hover {
+.navbar:link:hover {
   opacity: 50%;
 }
 .navbar .left-navbar {
@@ -26,7 +26,7 @@ body {
   border: 1px solid green;
   margin-left: 25%;
 }
-.navbar .left-navbar :hover {
+.navbar .left-navbar:hover {
   opacity: 50%;
 }
 .navbar .right-navbar {
@@ -38,12 +38,12 @@ body {
   padding: 2%;
   margin-left: 47%;
 }
-.navbar .right-navbar :last-child {
-  background-color: aqua;
+.navbar .right-navbar a:last-child {
+  background-color: blue;
 }
 .navbar .right-navbar :hover {
   opacity: 50%;
-  background-color: aqua;
+  background-color: rgb(221, 4, 41);
 }
 
 .hero {
@@ -58,15 +58,21 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 37%;
+  z-index: 1;
 }
 .hero .welcome {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   border: 1px solid blue;
   padding-top: 10%;
+  padding-bottom: 10%;
   margin-bottom: 5%;
+  background-image: url("../images/liberty.png");
+  background-position: top;
+  background-size: cover;
+  z-index: 3;
 }
 .hero .welcome .welcome-title {
   display: flex;
@@ -137,68 +143,145 @@ body {
   font-size: 0.95rem;
   opacity: 50%;
   margin-top: -3.5%;
+  margin-bottom: 2%;
   text-align: center;
 }
 .hero .about {
   border: 1px solid green;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 95%;
+  height: 400px;
   margin-left: 2.5%;
 }
-.hero .about .about-title {
+.hero .about .about-left-side {
   display: flex;
-  padding-left: 20%;
-  border: 1px solid black;
-  font-size: 255%;
-  width: 25%;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
 }
-.hero .about .about-content {
+.hero .about .about-left-side .about-title {
   display: flex;
-  padding-left: 20%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: 1px solid black;
+  font-size: 240%;
+  width: 70%;
+}
+.hero .about .about-left-side .about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 45%;
   flex-wrap: wrap;
-  width: 24%;
+  width: 43%;
   border: 1px solid blue;
 }
 .hero .about .about-img {
-  display: block;
-  justify-content: flex-start;
-  width: 10%;
-  border: 1px solid red;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: c;
+  align-self: center;
+  width: 40%;
+  border: 1px solid green;
 }
-.hero .footer {
+.hero .about .about-img img {
+  display: flex;
+  border: 1px solid black;
+  width: 65%;
+}
+.hero .blog {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 2%;
+  font-size: 2.5rem;
+}
+.hero .blog-posts {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: center;
+}
+.hero .blog-posts .post-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.hero .blog-posts .post-2 {
+  display: flex;
+  width: 16.6%;
+  padding: 0 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.hero .blog-posts .post-3 {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 20%;
+  margin: 5%;
+  padding-left: 15%;
+}
+.bottom-content .bottom-content-title {
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+.footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: grey;
+  background-color: rgb(74, 72, 72);
   width: 100%;
   height: 5vw;
 }
-.hero .footer .left-footer {
+.footer .left-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 10%;
 }
-.hero .footer .left-footer :link {
+.footer .left-footer :link {
   font-size: small;
   color: white;
 }
-.hero .footer .right-footer {
+.footer .right-footer {
   color: white;
 }
-.hero .footer .right-footer :link {
+.footer .right-footer :link {
   color: white;
 }
+
 @media all and (min-width: 320px) and (max-width: 600px) {
-  .hero .body {
+  .body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     flex-direction: column;
     width: 100vw;
   }
-  .hero .body .hero {
+  .body .hero {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
