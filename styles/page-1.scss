@@ -186,6 +186,10 @@ body {
     width: 95%;
     height: 400px;
     margin-left: 2.5%;
+    background-image: url("https://wp-themes.com/wp-content/themes/hestia/assets/img/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
     .about-left-side {
       display: flex;
@@ -242,10 +246,10 @@ body {
 
   .blog-posts {
     display: flex;
-    width: 80%;
-    margin-left: 10%;
+    width: 95%;
+    margin-left: 2.5%;
     justify-content: center;
-
+    border: 1px solid blue;
     .post-1 {
       @include posts;
     }
@@ -268,10 +272,16 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  width: 20%;
-  margin: 5%;
-  padding-left: 15%;
+  // margin: 5%;
+  width: 95%;
+  // height: 100%;
+  padding-left: 5%;
+  background-image: url("https://wp-themes.com/wp-content/themes/hestia/assets/img/contact.jpg");
+  background-size: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
 
+  color: white;
   .bottom-content-title {
     font-size: 2.2rem;
     width: 100%;
